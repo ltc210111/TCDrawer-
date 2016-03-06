@@ -1,0 +1,559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A23F7DDE1C8C1C310085E4D1 /* DrawerBody.m in Sources */ = {isa = PBXBuildFile; fileRef = A23F7DDD1C8C1C310085E4D1 /* DrawerBody.m */; };
+		A23F7DE31C8CA0DA0085E4D1 /* DrawerLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A23F7DE21C8CA0DA0085E4D1 /* DrawerLine.m */; };
+		A25FDBF51C8C077E00332FE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDBF41C8C077E00332FE6 /* main.m */; };
+		A25FDBF81C8C077E00332FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDBF71C8C077E00332FE6 /* AppDelegate.m */; };
+		A25FDBFB1C8C077E00332FE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDBFA1C8C077E00332FE6 /* ViewController.m */; };
+		A25FDBFE1C8C077E00332FE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25FDBFC1C8C077E00332FE6 /* Main.storyboard */; };
+		A25FDC001C8C077E00332FE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A25FDBFF1C8C077E00332FE6 /* Assets.xcassets */; };
+		A25FDC031C8C077E00332FE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A25FDC011C8C077E00332FE6 /* LaunchScreen.storyboard */; };
+		A25FDC0E1C8C077E00332FE6 /* TCDrawerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDC0D1C8C077E00332FE6 /* TCDrawerTests.m */; };
+		A25FDC191C8C077E00332FE6 /* TCDrawerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDC181C8C077E00332FE6 /* TCDrawerUITests.m */; };
+		A25FDC281C8C0A0C00332FE6 /* TCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDC271C8C0A0C00332FE6 /* TCTableView.m */; };
+		A2EBDB741C8CCAAA00F5403F /* DrawBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EBDB731C8CCAAA00F5403F /* DrawBtn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A25FDC0A1C8C077E00332FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A25FDBE81C8C077E00332FE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A25FDBEF1C8C077E00332FE6;
+			remoteInfo = TCDrawer;
+		};
+		A25FDC151C8C077E00332FE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A25FDBE81C8C077E00332FE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A25FDBEF1C8C077E00332FE6;
+			remoteInfo = TCDrawer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A23F7DDC1C8C1C310085E4D1 /* DrawerBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerBody.h; sourceTree = "<group>"; };
+		A23F7DDD1C8C1C310085E4D1 /* DrawerBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerBody.m; sourceTree = "<group>"; };
+		A23F7DDF1C8C9BA10085E4D1 /* DefineAny.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineAny.h; sourceTree = "<group>"; };
+		A23F7DE11C8CA0DA0085E4D1 /* DrawerLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerLine.h; sourceTree = "<group>"; };
+		A23F7DE21C8CA0DA0085E4D1 /* DrawerLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerLine.m; sourceTree = "<group>"; };
+		A25FDBF01C8C077E00332FE6 /* TCDrawer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCDrawer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25FDBF41C8C077E00332FE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A25FDBF61C8C077E00332FE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A25FDBF71C8C077E00332FE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A25FDBF91C8C077E00332FE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A25FDBFA1C8C077E00332FE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A25FDBFD1C8C077E00332FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A25FDBFF1C8C077E00332FE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A25FDC021C8C077E00332FE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A25FDC041C8C077E00332FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25FDC091C8C077E00332FE6 /* TCDrawerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCDrawerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25FDC0D1C8C077E00332FE6 /* TCDrawerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCDrawerTests.m; sourceTree = "<group>"; };
+		A25FDC0F1C8C077E00332FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25FDC141C8C077E00332FE6 /* TCDrawerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCDrawerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A25FDC181C8C077E00332FE6 /* TCDrawerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TCDrawerUITests.m; sourceTree = "<group>"; };
+		A25FDC1A1C8C077E00332FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A25FDC261C8C0A0C00332FE6 /* TCTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTableView.h; sourceTree = "<group>"; };
+		A25FDC271C8C0A0C00332FE6 /* TCTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTableView.m; sourceTree = "<group>"; };
+		A2EBDB721C8CCAAA00F5403F /* DrawBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawBtn.h; sourceTree = "<group>"; };
+		A2EBDB731C8CCAAA00F5403F /* DrawBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawBtn.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A25FDBED1C8C077E00332FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25FDC061C8C077E00332FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25FDC111C8C077E00332FE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A23F7DE01C8C9BBE0085E4D1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A23F7DDF1C8C9BA10085E4D1 /* DefineAny.h */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		A25FDBE71C8C077E00332FE6 = {
+			isa = PBXGroup;
+			children = (
+				A25FDBF21C8C077E00332FE6 /* TCDrawer */,
+				A25FDC0C1C8C077E00332FE6 /* TCDrawerTests */,
+				A25FDC171C8C077E00332FE6 /* TCDrawerUITests */,
+				A25FDBF11C8C077E00332FE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A25FDBF11C8C077E00332FE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A25FDBF01C8C077E00332FE6 /* TCDrawer.app */,
+				A25FDC091C8C077E00332FE6 /* TCDrawerTests.xctest */,
+				A25FDC141C8C077E00332FE6 /* TCDrawerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A25FDBF21C8C077E00332FE6 /* TCDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				A23F7DE01C8C9BBE0085E4D1 /* Tools */,
+				A25FDBF61C8C077E00332FE6 /* AppDelegate.h */,
+				A25FDBF71C8C077E00332FE6 /* AppDelegate.m */,
+				A25FDBF91C8C077E00332FE6 /* ViewController.h */,
+				A25FDBFA1C8C077E00332FE6 /* ViewController.m */,
+				A25FDBFC1C8C077E00332FE6 /* Main.storyboard */,
+				A25FDBFF1C8C077E00332FE6 /* Assets.xcassets */,
+				A25FDC011C8C077E00332FE6 /* LaunchScreen.storyboard */,
+				A25FDC041C8C077E00332FE6 /* Info.plist */,
+				A25FDBF31C8C077E00332FE6 /* Supporting Files */,
+				A25FDC261C8C0A0C00332FE6 /* TCTableView.h */,
+				A25FDC271C8C0A0C00332FE6 /* TCTableView.m */,
+				A2EBDB721C8CCAAA00F5403F /* DrawBtn.h */,
+				A2EBDB731C8CCAAA00F5403F /* DrawBtn.m */,
+				A23F7DE11C8CA0DA0085E4D1 /* DrawerLine.h */,
+				A23F7DE21C8CA0DA0085E4D1 /* DrawerLine.m */,
+				A23F7DDC1C8C1C310085E4D1 /* DrawerBody.h */,
+				A23F7DDD1C8C1C310085E4D1 /* DrawerBody.m */,
+			);
+			path = TCDrawer;
+			sourceTree = "<group>";
+		};
+		A25FDBF31C8C077E00332FE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A25FDBF41C8C077E00332FE6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A25FDC0C1C8C077E00332FE6 /* TCDrawerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A25FDC0D1C8C077E00332FE6 /* TCDrawerTests.m */,
+				A25FDC0F1C8C077E00332FE6 /* Info.plist */,
+			);
+			path = TCDrawerTests;
+			sourceTree = "<group>";
+		};
+		A25FDC171C8C077E00332FE6 /* TCDrawerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A25FDC181C8C077E00332FE6 /* TCDrawerUITests.m */,
+				A25FDC1A1C8C077E00332FE6 /* Info.plist */,
+			);
+			path = TCDrawerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A25FDBEF1C8C077E00332FE6 /* TCDrawer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25FDC1D1C8C077E00332FE6 /* Build configuration list for PBXNativeTarget "TCDrawer" */;
+			buildPhases = (
+				A25FDBEC1C8C077E00332FE6 /* Sources */,
+				A25FDBED1C8C077E00332FE6 /* Frameworks */,
+				A25FDBEE1C8C077E00332FE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCDrawer;
+			productName = TCDrawer;
+			productReference = A25FDBF01C8C077E00332FE6 /* TCDrawer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A25FDC081C8C077E00332FE6 /* TCDrawerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25FDC201C8C077E00332FE6 /* Build configuration list for PBXNativeTarget "TCDrawerTests" */;
+			buildPhases = (
+				A25FDC051C8C077E00332FE6 /* Sources */,
+				A25FDC061C8C077E00332FE6 /* Frameworks */,
+				A25FDC071C8C077E00332FE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A25FDC0B1C8C077E00332FE6 /* PBXTargetDependency */,
+			);
+			name = TCDrawerTests;
+			productName = TCDrawerTests;
+			productReference = A25FDC091C8C077E00332FE6 /* TCDrawerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A25FDC131C8C077E00332FE6 /* TCDrawerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A25FDC231C8C077E00332FE6 /* Build configuration list for PBXNativeTarget "TCDrawerUITests" */;
+			buildPhases = (
+				A25FDC101C8C077E00332FE6 /* Sources */,
+				A25FDC111C8C077E00332FE6 /* Frameworks */,
+				A25FDC121C8C077E00332FE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A25FDC161C8C077E00332FE6 /* PBXTargetDependency */,
+			);
+			name = TCDrawerUITests;
+			productName = TCDrawerUITests;
+			productReference = A25FDC141C8C077E00332FE6 /* TCDrawerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A25FDBE81C8C077E00332FE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = lotic;
+				TargetAttributes = {
+					A25FDBEF1C8C077E00332FE6 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = FJU278DU9P;
+					};
+					A25FDC081C8C077E00332FE6 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = FJU278DU9P;
+						TestTargetID = A25FDBEF1C8C077E00332FE6;
+					};
+					A25FDC131C8C077E00332FE6 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = FJU278DU9P;
+						TestTargetID = A25FDBEF1C8C077E00332FE6;
+					};
+				};
+			};
+			buildConfigurationList = A25FDBEB1C8C077E00332FE6 /* Build configuration list for PBXProject "TCDrawer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A25FDBE71C8C077E00332FE6;
+			productRefGroup = A25FDBF11C8C077E00332FE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A25FDBEF1C8C077E00332FE6 /* TCDrawer */,
+				A25FDC081C8C077E00332FE6 /* TCDrawerTests */,
+				A25FDC131C8C077E00332FE6 /* TCDrawerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A25FDBEE1C8C077E00332FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25FDC031C8C077E00332FE6 /* LaunchScreen.storyboard in Resources */,
+				A25FDC001C8C077E00332FE6 /* Assets.xcassets in Resources */,
+				A25FDBFE1C8C077E00332FE6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25FDC071C8C077E00332FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25FDC121C8C077E00332FE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A25FDBEC1C8C077E00332FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25FDBFB1C8C077E00332FE6 /* ViewController.m in Sources */,
+				A25FDBF81C8C077E00332FE6 /* AppDelegate.m in Sources */,
+				A25FDC281C8C0A0C00332FE6 /* TCTableView.m in Sources */,
+				A25FDBF51C8C077E00332FE6 /* main.m in Sources */,
+				A2EBDB741C8CCAAA00F5403F /* DrawBtn.m in Sources */,
+				A23F7DE31C8CA0DA0085E4D1 /* DrawerLine.m in Sources */,
+				A23F7DDE1C8C1C310085E4D1 /* DrawerBody.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25FDC051C8C077E00332FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25FDC0E1C8C077E00332FE6 /* TCDrawerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25FDC101C8C077E00332FE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A25FDC191C8C077E00332FE6 /* TCDrawerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A25FDC0B1C8C077E00332FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A25FDBEF1C8C077E00332FE6 /* TCDrawer */;
+			targetProxy = A25FDC0A1C8C077E00332FE6 /* PBXContainerItemProxy */;
+		};
+		A25FDC161C8C077E00332FE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A25FDBEF1C8C077E00332FE6 /* TCDrawer */;
+			targetProxy = A25FDC151C8C077E00332FE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A25FDBFC1C8C077E00332FE6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A25FDBFD1C8C077E00332FE6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A25FDC011C8C077E00332FE6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A25FDC021C8C077E00332FE6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A25FDC1B1C8C077E00332FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A25FDC1C1C8C077E00332FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A25FDC1E1C8C077E00332FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TCDrawer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ltc.TCDrawer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A25FDC1F1C8C077E00332FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TCDrawer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ltc.TCDrawer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A25FDC211C8C077E00332FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TCDrawerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ltc.TCDrawerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCDrawer.app/TCDrawer";
+			};
+			name = Debug;
+		};
+		A25FDC221C8C077E00332FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TCDrawerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ltc.TCDrawerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCDrawer.app/TCDrawer";
+			};
+			name = Release;
+		};
+		A25FDC241C8C077E00332FE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TCDrawerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ltc.TCDrawerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TCDrawer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A25FDC251C8C077E00332FE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TCDrawerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ltc.TCDrawerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TCDrawer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A25FDBEB1C8C077E00332FE6 /* Build configuration list for PBXProject "TCDrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25FDC1B1C8C077E00332FE6 /* Debug */,
+				A25FDC1C1C8C077E00332FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A25FDC1D1C8C077E00332FE6 /* Build configuration list for PBXNativeTarget "TCDrawer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25FDC1E1C8C077E00332FE6 /* Debug */,
+				A25FDC1F1C8C077E00332FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A25FDC201C8C077E00332FE6 /* Build configuration list for PBXNativeTarget "TCDrawerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25FDC211C8C077E00332FE6 /* Debug */,
+				A25FDC221C8C077E00332FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A25FDC231C8C077E00332FE6 /* Build configuration list for PBXNativeTarget "TCDrawerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A25FDC241C8C077E00332FE6 /* Debug */,
+				A25FDC251C8C077E00332FE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A25FDBE81C8C077E00332FE6 /* Project object */;
+}
