@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface DrawBtn : UIButton
-
+@property(assign,nonatomic)CGFloat *x;
+@property(assign,nonatomic)CGFloat *y;
+-(instancetype)initWithFrame:(CGRect)frame andLabelname:(NSString *)name;
 @end

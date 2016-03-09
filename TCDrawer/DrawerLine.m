@@ -11,8 +11,6 @@
 @implementation DrawerLine
 -(void)drawRect:(CGRect)rect {
     CGContextRef ctx = UIGraphicsGetCurrentContext();
-//    CGContextMoveToPoint(ctx, self.bounds.size.width, self.bounds.size.height);
-//    CGContextAddEllipseInRect(ctx, CGRectMake(self.bounds.size.width/4,self.bounds.size.height/4,self.bounds.size.width/2,self.bounds.size.height/2));
     CGContextAddEllipseInRect(ctx, CGRectMake(self.frame.size.width/4, self.frame.size.height/4, self.frame.size.width/2, self.frame.size.height/2));
     CGContextSetLineWidth(ctx, 10);
     [Licolor setStroke];

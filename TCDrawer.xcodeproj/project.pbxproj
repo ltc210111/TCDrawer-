@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A23F7DDE1C8C1C310085E4D1 /* DrawerBody.m in Sources */ = {isa = PBXBuildFile; fileRef = A23F7DDD1C8C1C310085E4D1 /* DrawerBody.m */; };
 		A23F7DE31C8CA0DA0085E4D1 /* DrawerLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A23F7DE21C8CA0DA0085E4D1 /* DrawerLine.m */; };
 		A25FDBF51C8C077E00332FE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDBF41C8C077E00332FE6 /* main.m */; };
 		A25FDBF81C8C077E00332FE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDBF71C8C077E00332FE6 /* AppDelegate.m */; };
@@ -18,6 +17,7 @@
 		A25FDC0E1C8C077E00332FE6 /* TCDrawerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDC0D1C8C077E00332FE6 /* TCDrawerTests.m */; };
 		A25FDC191C8C077E00332FE6 /* TCDrawerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDC181C8C077E00332FE6 /* TCDrawerUITests.m */; };
 		A25FDC281C8C0A0C00332FE6 /* TCTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A25FDC271C8C0A0C00332FE6 /* TCTableView.m */; };
+		A2E6A67E1C8FB615009348FA /* DrawBody.m in Sources */ = {isa = PBXBuildFile; fileRef = A2E6A67D1C8FB615009348FA /* DrawBody.m */; };
 		A2EBDB741C8CCAAA00F5403F /* DrawBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EBDB731C8CCAAA00F5403F /* DrawBtn.m */; };
 /* End PBXBuildFile section */
 
@@ -39,8 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A23F7DDC1C8C1C310085E4D1 /* DrawerBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerBody.h; sourceTree = "<group>"; };
-		A23F7DDD1C8C1C310085E4D1 /* DrawerBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerBody.m; sourceTree = "<group>"; };
 		A23F7DDF1C8C9BA10085E4D1 /* DefineAny.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefineAny.h; sourceTree = "<group>"; };
 		A23F7DE11C8CA0DA0085E4D1 /* DrawerLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerLine.h; sourceTree = "<group>"; };
 		A23F7DE21C8CA0DA0085E4D1 /* DrawerLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerLine.m; sourceTree = "<group>"; };
@@ -62,6 +60,8 @@
 		A25FDC1A1C8C077E00332FE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A25FDC261C8C0A0C00332FE6 /* TCTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCTableView.h; sourceTree = "<group>"; };
 		A25FDC271C8C0A0C00332FE6 /* TCTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCTableView.m; sourceTree = "<group>"; };
+		A2E6A67C1C8FB615009348FA /* DrawBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawBody.h; sourceTree = "<group>"; };
+		A2E6A67D1C8FB615009348FA /* DrawBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawBody.m; sourceTree = "<group>"; };
 		A2EBDB721C8CCAAA00F5403F /* DrawBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawBtn.h; sourceTree = "<group>"; };
 		A2EBDB731C8CCAAA00F5403F /* DrawBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawBtn.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,8 +138,8 @@
 				A2EBDB731C8CCAAA00F5403F /* DrawBtn.m */,
 				A23F7DE11C8CA0DA0085E4D1 /* DrawerLine.h */,
 				A23F7DE21C8CA0DA0085E4D1 /* DrawerLine.m */,
-				A23F7DDC1C8C1C310085E4D1 /* DrawerBody.h */,
-				A23F7DDD1C8C1C310085E4D1 /* DrawerBody.m */,
+				A2E6A67C1C8FB615009348FA /* DrawBody.h */,
+				A2E6A67D1C8FB615009348FA /* DrawBody.m */,
 			);
 			path = TCDrawer;
 			sourceTree = "<group>";
@@ -304,12 +304,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25FDBFB1C8C077E00332FE6 /* ViewController.m in Sources */,
+				A2E6A67E1C8FB615009348FA /* DrawBody.m in Sources */,
 				A25FDBF81C8C077E00332FE6 /* AppDelegate.m in Sources */,
 				A25FDC281C8C0A0C00332FE6 /* TCTableView.m in Sources */,
 				A25FDBF51C8C077E00332FE6 /* main.m in Sources */,
 				A2EBDB741C8CCAAA00F5403F /* DrawBtn.m in Sources */,
 				A23F7DE31C8CA0DA0085E4D1 /* DrawerLine.m in Sources */,
-				A23F7DDE1C8C1C310085E4D1 /* DrawerBody.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

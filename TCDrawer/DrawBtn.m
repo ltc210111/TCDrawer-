@@ -9,12 +9,15 @@
 #import "DrawBtn.h"
 
 @implementation DrawBtn
--(instancetype)initWithFrame:(CGRect)frame {
+-(instancetype)initWithFrame:(CGRect)frame andLabelname:(NSString *)name {
     if(self = [super initWithFrame:frame]) {
-        self.backgroundColor = [UIColor clearColor];
-        [self setBackgroundImage:[UIImage imageNamed:@"refresh"] forState:UIControlStateNormal
-         ];
-    }
+        self.backgroundColor = [UIColor blueColor];
+        [self setTitle:name forState:UIControlStateNormal];
+        
+        
+}
     return self;
 }
+
+
 @end
