@@ -10,4 +10,5 @@
 
 @interface DrawBody : UIView
 @property (assign, nonatomic) BOOL Open;
++(id)sharedBody;
 @end

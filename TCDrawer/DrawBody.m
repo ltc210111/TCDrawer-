@@ -9,12 +9,23 @@
 #import "DrawBody.h"
 
 @implementation DrawBody
++ (id)sharedBody
+{
+    static id instance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        instance = [[self alloc] init];
+    });
+    return instance;
+}
+
 -(instancetype)init {
     if(self = [super init]) {
         [self drawLayer:self.layer inContext:UIGraphicsGetCurrentContext()];
     }
     return self;
 }
+
 -(void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx {
     //1.绘制图形
     //画两个圆

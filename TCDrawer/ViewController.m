@@ -12,42 +12,45 @@
 #import "DrawBody.h"
 #import "DrawerLine.h"
 #import "DrawBtn.h"
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate,BtnDelgate>
 @property (strong, nonatomic) IBOutlet UIView *myView;
 @property (strong, nonatomic) UIScrollView *myScrollView;
 @property (strong, nonatomic) TCTableView *myTableView;
 @property (strong, nonatomic) DrawBody *DrawerBody;
 @property (strong, nonatomic) DrawerLine *DrawerLine;
-@property (assign, nonatomic) int BtnNum;
+@property (assign, nonatomic) NSInteger BtnNum;
+@property (assign,nonatomic) NSMutableArray * BtnArray;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-//    set the button num first
-    self.BtnNum = 4;
     
+    self.BtnNum = 5;
+    self.BtnArray = [NSMutableArray array];
     [super viewDidLoad];
     [self addScrollView];
     [self addTableView];
     [self addDrawBody];
     [self addPanInTableVIew];
     [self addDrawerLine];
+    NSLog(@"123");
 }
 
 
 -(void)handlePan:(UIPanGestureRecognizer *)sender {
+
     CGFloat dx = [sender translationInView:self.myScrollView].x;
-    if(dx < -20 && !self.DrawerBody.Open) {
-//        显示抽屉
-        [UIView animateWithDuration:0.2f animations:^{
-            [self.myTableView addSubview:self.DrawerBody];
-            self.DrawerBody.layer.frame = CGRectMake(self.view.frame.size.width-TCLength/2, (self.view.frame.size.height-TCLength)/2, TCLength, TCLength);
-             [_DrawerBody.layer setNeedsDisplay];
-        }];
-//        [self addBtn];
-//        显示光圈
-        [UIView transitionWithView:self.view duration:0.5f options:UIViewAnimationOptionAllowUserInteraction animations:^{
+    if(dx < -20) {
+        [UIView transitionWithView:self.view duration:0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+            
+            self.DrawerBody.frame = CGRectMake(self.view.frame.size.width-TCLength/2, (self.view.frame.size.height-TCLength)/2, TCLength, TCLength);
+            [_DrawerBody.layer setNeedsDisplay];
+            [self addBtn];
+        } completion:nil];
+        
+        [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionAllowUserInteraction animations:^{
             self.DrawerLine.frame= CGRectMake(self.view.frame.size.width-self.view.frame.size.height/2, 0, self.view.frame.size.height, self.view.frame.size.height);
             self.DrawerLine.alpha = 0;
             [self.DrawerLine setNeedsDisplay];
@@ -57,16 +60,18 @@
     }
     
     if(dx > 20 && self.DrawerBody.Open) {
-//        隐藏抽屉
         self.DrawerBody.frame = CGRectMake(self.view.frame.size.width,self.view.frame.size.height/2, 0,0);
         [_DrawerBody setNeedsDisplay];
-//        隐藏光圈
-        self.DrawerLine.frame= CGRectMake(self.view.frame.size.width, (self.view.frame.size.height)/2, 0, 0);
-        [self.DrawerLine setNeedsDisplay];
-        self.DrawerBody.Open = false;
-        self.DrawerLine.alpha = 1;
-        [self.DrawerBody removeFromSuperview];
+        [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+            self.DrawerLine.frame= CGRectMake(self.view.frame.size.width, (self.view.frame.size.height)/2, 0, 0);
+            self.DrawerLine.alpha = 1;
+            [self.DrawerLine setNeedsDisplay];
+        }completion:^(BOOL finished) {
+            self.DrawerBody.Open = false;
+//            [self removeBtn];
+        }];
     }
+
 }
 
 -(void)addScrollView {
@@ -85,10 +90,11 @@
 }
 
 -(void)addDrawBody {
-    _DrawerBody = [[DrawBody alloc]init];
+    _DrawerBody = [DrawBody sharedBody];
     _DrawerBody.frame = CGRectMake(self.view.frame.size.width,self.view.frame.size.height/2, 0,0);
-    _DrawerBody.backgroundColor = [UIColor clearColor];
-    [self.myTableView.layer addSublayer:_DrawerBody.layer];
+    _DrawerBody.backgroundColor = [UIColor whiteColor];
+    [self.myTableView addSubview:_DrawerBody];
+    
      NSLog(@"%s-%f",__func__,self.DrawerBody.frame.size.width);
 }
 
@@ -104,13 +110,25 @@
 }
 
 -(void)addBtn {
-    CGFloat perT = M_PI /(self.BtnNum+1);
-    for(int i =1 ;i <= self.BtnNum ;i++) {
-        CGFloat x = self.DrawerBody.bounds.size.width/2 - self.DrawerBody.bounds.size.width/2*(sin(perT*i));
-        CGFloat y = self.DrawerBody.bounds.size.height/2 - self.DrawerBody.bounds.size.width/2*(cos(perT*i));
-        NSLog(@"%f-------%f",x,y);
-        DrawBtn *btn = [[DrawBtn alloc]initWithFrame:CGRectMake(x/2, y - 10, 50, 20) andLabelname:[NSString stringWithFormat:@"%d",i]];
-        [self.DrawerBody addSubview:btn];
+    if(self.BtnArray.count==0) {
+        for (int i = 1; i<=self.BtnNum; ++i) {
+            double angle = M_PI/(self.BtnNum+1);
+            DrawBtn *btn = [[DrawBtn alloc]initWithFrame:CGRectMake(R - R*sin(angle*i),R + R*cos(angle*i)-25/2,50,25) andLabelname:[NSString stringWithFormat:@"%d",i]];
+            [self.DrawerBody addSubview:btn];
+            btn.delegate = self;
+            [self.BtnArray addObject:btn];
+        }
     }
 }
+
+-(void)removeBtn {
+    for (DrawBtn *btn in self.BtnArray) {
+        [btn removeFromSuperview];
+    }
+}
+
+-(void)clickAct {
+    NSLog(@"%s",__func__);
+}
+
 @end

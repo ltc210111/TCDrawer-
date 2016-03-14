@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#define MJRandomData [NSString stringWithFormat:@"随机数据---%d", arc4random_uniform(1000000)]
 
 @interface TCTableView : UITableView
-
+@property (strong, nonatomic) NSMutableArray *data;
 @end
