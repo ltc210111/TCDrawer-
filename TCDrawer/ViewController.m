@@ -26,16 +26,15 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    
+//   唯一设置
     self.BtnNum = 5;
+    
     self.BtnArray = [NSMutableArray array];
     [super viewDidLoad];
     [self addScrollView];
     [self addTableView];
     [self addDrawBody];
     [self addPanInTableVIew];
-    [self addDrawerLine];
-    NSLog(@"123");
 }
 
 
@@ -43,12 +42,14 @@
 
     CGFloat dx = [sender translationInView:self.myScrollView].x;
     if(dx < -20) {
+//        NSLog(@"%lu",(unsigned long)self.BtnArray.count);
         [UIView transitionWithView:self.view duration:0.3 options:UIViewAnimationOptionAllowUserInteraction animations:^{
-            
             self.DrawerBody.frame = CGRectMake(self.view.frame.size.width-TCLength/2, (self.view.frame.size.height-TCLength)/2, TCLength, TCLength);
             [_DrawerBody.layer setNeedsDisplay];
-            [self addBtn];
-        } completion:nil];
+            
+        } completion:^(BOOL finished) {
+         [self addBtn];
+        }];
         
         [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionAllowUserInteraction animations:^{
             self.DrawerLine.frame= CGRectMake(self.view.frame.size.width-self.view.frame.size.height/2, 0, self.view.frame.size.height, self.view.frame.size.height);
@@ -68,10 +69,8 @@
             [self.DrawerLine setNeedsDisplay];
         }completion:^(BOOL finished) {
             self.DrawerBody.Open = false;
-//            [self removeBtn];
         }];
     }
-
 }
 
 -(void)addScrollView {
@@ -94,7 +93,7 @@
     _DrawerBody.frame = CGRectMake(self.view.frame.size.width,self.view.frame.size.height/2, 0,0);
     _DrawerBody.backgroundColor = [UIColor whiteColor];
     [self.myTableView addSubview:_DrawerBody];
-    
+    [self addDrawerLine];
      NSLog(@"%s-%f",__func__,self.DrawerBody.frame.size.width);
 }
 
@@ -108,9 +107,9 @@
     self.DrawerLine.backgroundColor = [UIColor clearColor];
     [self.myTableView addSubview:self.DrawerLine];
 }
-
+//CGRectMake(R - R*sin(angle*i),R + R*cos(angle*i)-25/2,50,25)
 -(void)addBtn {
-    if(self.BtnArray.count==0) {
+    if(self.BtnArray.count==1) {
         for (int i = 1; i<=self.BtnNum; ++i) {
             double angle = M_PI/(self.BtnNum+1);
             DrawBtn *btn = [[DrawBtn alloc]initWithFrame:CGRectMake(R - R*sin(angle*i),R + R*cos(angle*i)-25/2,50,25) andLabelname:[NSString stringWithFormat:@"%d",i]];
@@ -120,13 +119,6 @@
         }
     }
 }
-
--(void)removeBtn {
-    for (DrawBtn *btn in self.BtnArray) {
-        [btn removeFromSuperview];
-    }
-}
-
 -(void)clickAct {
     NSLog(@"%s",__func__);
 }
